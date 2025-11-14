@@ -3,29 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lied Zoeker 🎧</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Lied Zoeker</title>
   </head>
   <body>
     <header>
+      <div class="overlay"></div>
       <h1 class="titel">Lied Zoeker</h1>
 
-      <form id="form">
+      <form id="form" autocomplete="off">
         <input
           type="text"
           id="search"
-          placeholder="Voer de naam van de artiest of het nummer in..."
+          placeholder="Zoek artiest of nummer..."
         />
-        <button>Zoeken</button>
+        <button id="search-btn" type="submit">🔍</button>
       </form>
     </header>
 
-    <div id="result" class="container">
-      <p>Resultaten worden hier weergegeven</p>
-    </div>
+    <main>
+      <div id="result" class="container">
+        <p class="placeholder">🎶 Resultaten verschijnen hier</p>
+      </div>
 
-    <div id="more" class="container centered"></div>
+      <div id="more" class="container centered"></div>
+    </main>
+
+    <footer>
+      <p>🎧 Gemaakt met ❤️ door [Jouw Naam] · Powered by lyrics.ovh API</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
